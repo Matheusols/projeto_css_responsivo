@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+body{
+    background-color: #eeedef;
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    background-color: #3967d6;
+}
+header .container{
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+}
+.container h1{
+    font-style: italic;
+}
+.container li, a{
+    display: inline;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFF;
+}
+#menu li{
+    padding: 0 10px;
+}
+#loja{
+    padding-top: 40px;
+    display: flex;
+}
+#loja img{
+    width: 400px;
+    padding-right: 40px;
+}
+h2, span{
+    flex-direction: column;
+}
+h2{
+    border-bottom: 2px solid  #3967d6;
+    color:  #3967d6;
+    font-style: italic;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+#produtos{
+    margin-top: 50px;
+}
+#produtos img{
+    width: 200px;
+}
+#produtos ul{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    place-items: center;
+}
+#produtos li{
+    width: 200px;
+    color:black;
+}
+#produtos ul li h3{
+    margin-top: 20px;
+}
+h4{
+    padding-top: 5px;
+    font-weight: normal;
+    font-size: 14px;
+}
+#produtos button{
+    margin-top: 15px;
+    border-style: none;
+    width: 100%;
+    background-color:  #3967d6;
+    font-weight: bold;
+    font-size: 15px;
+    color: #FFF;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#produtos button:hover{
+    background-color:  #294788;
+}
+footer{
+    background-color: #3967d6;
+}
+footer .container{
+    margin-top: 40px;
+    padding: 12px 0;
+    text-align: center;
+    color: #FFF;
+}
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #loja img{
+        padding: 0;
+        width: 100%;
+    }
+    #loja{
+        width: 100%;
+        display: block;
+    }
+    #produtos ul{
+        grid-template-columns: repeat(2, 50%);
+    }
+    #produtos li{
+        margin-bottom: 10px;
+    }
+    #produtos li{
+        margin-bottom: 10px;
+        width: 95%;
+    }
+    #produtos img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+
+    }
+    #loja img{
+        padding: 0;
+        width: 100%;
+    }
+    #loja{
+        width: 100%;
+        display: block;
+    }
+    #produtos ul{
+        grid-template-columns: repeat(1, 100%);
+    }
+    #produtos li{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    #produtos img{
+        width: 100%;
+    }
+}
